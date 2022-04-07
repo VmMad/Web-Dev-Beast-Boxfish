@@ -1,0 +1,8 @@
+
+.info-pages{
+  font-size: 14px;
+  width: 387px;
+  justify-content: space-evenly;
+  font-weight: 500;
+  display: flex;
+}

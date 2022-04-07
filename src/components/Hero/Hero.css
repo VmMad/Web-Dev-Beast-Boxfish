@@ -1,0 +1,30 @@
+
+.hero-wrapper{
+    padding-top: 111px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-content{
+    height: 75.80%;
+    margin: 0;
+    margin-bottom: auto;
+    padding: 0;
+}
+
+.red-text{
+    color:#ff5c5c;
+}
+.hero-content{
+    transition: all ease-in .5s;
+
+}
+
+@media screen and (min-width:992px){
+    .hero-wrapper{
+        padding-top: 84px;
+    }
+}
+

@@ -1,0 +1,14 @@
+.not-found-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./../../../public/BoxfishStudio.svg") 15% 75% no-repeat;
+    background-size: 15%;
+}
+
+.not-found{
+    color: var(--h1color)
+    
+}

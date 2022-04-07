@@ -1,0 +1,41 @@
+.customers{
+    height: 11.60vh;
+    display: flex;
+    margin:44px 10vw;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.customers img{
+    height: 30px;
+    width: max-content;
+    filter: var(--filter);
+    z-index: 1;
+}
+.customers .customer-logos{
+    padding: 0;
+}
+.customer-logos{
+    justify-content: space-between;
+}
+
+@media screen and (min-width:992px) {
+    .customers{
+        height: 15.35vh;
+        margin: 0;
+        margin-bottom: 5.40vh;
+        height: auto;
+    }    
+    
+    .customer-logos img{
+        margin:0 10%;
+        height: 40px;
+    }
+    
+    .customers-start{
+        justify-content: start;
+    }
+    .customers-end{
+        justify-content: end;
+    }
+}

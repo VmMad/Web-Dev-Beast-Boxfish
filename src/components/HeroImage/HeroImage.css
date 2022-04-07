@@ -1,0 +1,22 @@
+.hero-image{
+    padding-right: 3.06%;
+    display: flex;
+    justify-content: center;
+    max-height: 329px;
+    transition: all ease-in .5s;
+
+}
+
+.hero-image img{
+    object-fit: scale-down;
+    max-width: 679px;
+    width: 88.7vw;
+    transition: all ease-in .5s;
+}
+
+
+@media screen and (min-width:576px){
+    .hero-image img{
+        width: 100%;
+    }
+}

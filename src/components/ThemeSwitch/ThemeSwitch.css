@@ -1,0 +1,14 @@
+.toggle-theme{
+  position: absolute;
+  border: none;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  background-color: transparent;
+  transition: transform .20s ease-in-out;
+  width: 30px;
+}
+
+.toggle-theme.transition{
+  transform: translate(-50%, -250%);
+}

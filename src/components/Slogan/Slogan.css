@@ -1,0 +1,41 @@
+.slogan{
+  padding: 7.13vh 0 0 3.06vw;
+  transition: ease all .2s;
+}
+.slogan h1{
+  font-weight: 700;
+  font-size: 24px;
+  width: 85%;
+  line-height: 29px;
+  color:var(--h1color);
+} 
+.slogan h2{
+  color:var(--h2color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+}
+
+ @media screen and (min-width: 576px) and (max-width:991px) {
+    .slogan {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+      .slogan h1{
+      width: 100%;
+    }
+}
+  
+  @media screen and (min-width: 992px) {
+    .slogan {
+      transform: translate(0,15%);
+      padding: 7.13vh 0 7.13vh 3.06vw;
+    }
+    
+    .slogan h1{
+      font-size: 36px;
+      line-height: 44px;
+  }
+}

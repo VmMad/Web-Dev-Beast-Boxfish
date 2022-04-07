@@ -1,0 +1,38 @@
+.contact-info-md-container{
+  display:flex;
+  background:var(--background);
+  border-bottom:1px solid var(--border) ;
+  font-size: 12px;
+  width: 100%;
+  margin: 0;
+}
+
+.contact-info-md-container > div{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info-md-container div a{
+  width: 114px;
+}
+
+.ws-nowrap{
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.red-dot{
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin:0 16px;
+}
+
+@media screen and (min-width: 992px) {
+   .contact-info-md-container {
+    display: none;
+  }
+}

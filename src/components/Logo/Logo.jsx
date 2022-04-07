@@ -1,17 +1,20 @@
-import "./Logo.css"
+import Col from 'react-bootstrap/Col'
 import { Link } from "react-router-dom"
+import "./Logo.css"
 
 const Logo = () => {
 
     return (
-        <Link to="/">
-            <img src="./BoxfishStudio.svg" className="logo-svg" />
-            <section>
-                <span className="boxfish-logo">Boxfish</span>
-                <br />
-                <span className="studio-logo">studio</span>
-            </section>
-        </Link>
+        <Col className="d-flex ml-landing logo-col">
+            <Link to="/" className="d-flex">
+                <img src="./BoxfishStudio.svg" className="logo-svg" alt='boxfish logo' />
+                <section className="text-logo">
+                    <span className="boxfish-text">Boxfish</span>
+                    <br />
+                    <span className="studio-text">studio</span>
+                </section>
+            </Link>
+        </Col>
     )
 }
 export default Logo

@@ -2,6 +2,22 @@
     width: 43px;
     height: 50px;
 }
-.boxfish-logo{
-    text-transform: uppercase;
+.logo-col{
+  padding: 0;
+  max-width: max-content;
 }
+
+.text-logo{
+  font-size: 11px;
+  line-height: 13.31px;
+  align-self: center;
+  margin-left: 9.92px;
+  text-decoration: none;
+  color: var(--h1color);
+}
+
+.text-logo .boxfish-text{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+

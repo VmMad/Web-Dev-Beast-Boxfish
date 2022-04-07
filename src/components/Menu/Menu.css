@@ -1,0 +1,40 @@
+.menu-button{
+    display: flex;
+    border: none;
+    max-width:max-content ;
+    
+}
+.menu-button span{
+    color: #4081FF
+}
+
+.menu-button:focus{
+    box-shadow: none;
+}
+
+button.navbar-toggler {
+    padding: 10px;
+    margin: 22px;
+}
+.menu-links{
+    position: relative;
+    padding: 0;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border);
+    z-index: 1;
+    padding:10px 30px;
+}
+
+.menu-links-container a{
+    color: #4081FF!important;
+    font-weight: 500;
+    padding: 0.5rem 0;
+
+}
+
+@media screen and (min-width:800px) {
+    .menu-button, .menu-links{
+        display: none;
+    }
+}
+

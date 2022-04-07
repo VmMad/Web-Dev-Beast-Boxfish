@@ -1,0 +1,20 @@
+.contact-info{
+  padding: 0;
+  min-width: 270px;
+  font-weight: 400;
+  font-size: 12px;
+  display: none;
+  padding-left: 3.32%;
+}
+
+.contact-info div{
+  width: 242px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-info {
+    display: flex;
+  }
+}
