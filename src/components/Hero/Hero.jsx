@@ -1,4 +1,4 @@
-import { Row, Col } from "react-bootstrap"
+import Row from "react-bootstrap/Row"
 import HeroImage from "../HeroImage/HeroImage.jsx"
 import CustomersSection from "./../CustomersSection/CustomersSection.jsx"
 import Slogan from "./../Slogan/Slogan"
