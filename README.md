@@ -1,7 +1,7 @@
 # <p align=center>Boxfish Studio</p>
 
-Boxfish's Web Dev Beast Assignment!
-I recreated their landing page, made a dark theme with the use of ContextAPI. 
+Boxfish's Web Dev Beast Assignment!</br>
+I recreated their <a href="https://boxfish.studio/">landing page</a> and made a dark theme with the use of ContextAPI. </br>
 Developed using React. Completely responsive.
 
 To run it just follow these steps in your console:
