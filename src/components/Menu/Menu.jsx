@@ -1,11 +1,12 @@
+import { useContext } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { NavLink } from "react-router-dom"
+import { ThemeContext } from '../../context/ThemeContext'
 import './Menu.css'
 
-const Menu = ({ activeMenu }) => {
+const Menu = ({ activeMenu, themeSwitch }) => {
 
-    const menuLinks = document.querySelector(".menu-links-container")
-    menuLinks && menuLinks.childNodes.forEach(elm => elm.addEventListener("click", () => activeMenu()))
+    const { dark, toggle } = useContext(ThemeContext)
 
     return (
         <>
@@ -16,10 +17,14 @@ const Menu = ({ activeMenu }) => {
             </Navbar.Toggle>
             <Navbar.Collapse className="menu-links" id="responsive-navbar-nav">
                 <Nav className="text-end menu-links-container align-content-between">
-                    <NavLink to="#">Services</NavLink>
-                    <NavLink to="#">About us</NavLink>
-                    <NavLink to="#">Career</NavLink>
-                    <NavLink to="#">Work</NavLink>
+                    <NavLink to="#" className="toggle-theme-link" onClick={() => {
+                        themeSwitch()
+                        toggle()
+                    }}>Toggle {!dark ? "dark" : "light"} theme</NavLink>
+                    <NavLink to="/services" onClick={activeMenu}>Services</NavLink>
+                    <NavLink to="/about" onClick={activeMenu}>About us</NavLink>
+                    <NavLink to="/career" onClick={activeMenu}>Career</NavLink>
+                    <NavLink to="/work" onClick={activeMenu}>Work</NavLink>
                 </Nav>
             </Navbar.Collapse>
         </>

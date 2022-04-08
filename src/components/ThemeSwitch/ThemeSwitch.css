@@ -1,14 +1,11 @@
 .toggle-theme{
-  position: absolute;
   border: none;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%);
   background-color: transparent;
-  transition: transform .20s ease-in-out;
-  width: 30px;
+  transition: all .20s ease-in-out;
+  width: 50px;
+  transform: translate(0,-5%);
 }
 
 .toggle-theme.transition{
-  transform: translate(-50%, -250%);
+  transform: translate(-0%, -250%);
 }

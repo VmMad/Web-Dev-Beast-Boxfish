@@ -20,4 +20,16 @@
   font-weight: 600;
   text-transform: uppercase;
 }
+.ml-landing{
+  margin-left: 3.05%;
+}
 
+@media screen and (min-width:1200px) {
+  .text-logo{
+    font-size: 15px;
+  }
+
+  .ml-landing{
+    margin-left: 6vw;
+  }  
+}

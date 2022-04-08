@@ -18,9 +18,6 @@ body{
 img{
   width:100%
 }
-.ml-landing{
-  margin-left: 3.05%;
-}
 
 .hero-wapper,
 .header,
@@ -28,6 +25,7 @@ img{
 .contact-info-md-container,
 .boxfish-text,
 .studio-text,
+.ml-landing,
 h2{
   transition: all ease-in .5s ;
 }
@@ -47,10 +45,18 @@ transition: background .5s ease-in;
   overflow: hidden;
   transition: height .35s ease;
 }
+a{
+  transition: color ease 0.3s;
+}
+a:hover{
+  color: var(--ahover)!important;
+
+}
 
 /* THEMES */
 
 body[data-darktheme='false']{
+  --ahover:rgb(25 77 179);
   --border: #E5E5E5;
   --h1color: #000;
   --h2color: #999999;
@@ -59,6 +65,7 @@ body[data-darktheme='false']{
 }
 
 body[data-darktheme='true']{
+  --ahover: rgb(146 183 255);
   --border: #000;
   --h1color: #FFF;
   --h2color:#E5E5E5;

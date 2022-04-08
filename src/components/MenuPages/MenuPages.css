@@ -1,8 +1,18 @@
 
 .info-pages{
+  align-items: center;
   font-size: 14px;
   width: 387px;
   justify-content: space-evenly;
   font-weight: 500;
   display: flex;
+  transition: all ease .5s;
+}
+
+@media screen and (min-width:1200px) {
+  .info-pages{
+    margin-right: 6vw;
+    font-size: 16px;
+    font-weight: 500;
+  }  
 }

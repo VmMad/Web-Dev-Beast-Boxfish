@@ -4,7 +4,6 @@ import ContactInfoMD from "../ContactInfoMD/ContactInfoMD"
 import ContactInfo from "../ContactInfo/ContactInfo"
 import Logo from "./../Logo/Logo"
 import Menu from "../Menu/Menu"
-import ThemeSwitch from "../ThemeSwitch/ThemeSwitch"
 import MenuPages from "../MenuPages/MenuPages"
 import "./Header.css"
 
@@ -14,13 +13,16 @@ const Header = () => {
 
     const activeMenu = () => {
         setMenuStatus(!menuStatus)
-        document.querySelector(".unfocus").classList.toggle("active-unfocus")
+        menuStatus ?
+            document.querySelector(".unfocus").classList.remove("active-unfocus") :
+            document.querySelector(".unfocus").classList.add("active-unfocus")
     }
 
     const themeSwitch = () => {
         document.querySelector(".toggle-theme").classList.toggle("transition")
         setTimeout(() => document.querySelector(".toggle-theme").classList.toggle("transition"), 500)
     }
+
     return (
         <>
             <Navbar expand="xs" variant="light" expanded={menuStatus}
@@ -28,9 +30,8 @@ const Header = () => {
                 <Container className="navbar-container">
                     <Logo />
                     <ContactInfo />
-                    <MenuPages />
-                    <Menu activeMenu={activeMenu} />
-                    <ThemeSwitch themeSwitch={themeSwitch} />
+                    <MenuPages themeSwitch={themeSwitch} />
+                    <Menu activeMenu={activeMenu} themeSwitch={themeSwitch} />
                 </Container>
                 <ContactInfoMD />
             </Navbar >

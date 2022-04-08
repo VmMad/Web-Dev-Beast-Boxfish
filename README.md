@@ -1,1 +1,1 @@
-# Boxfish landing page created using ReactJS
+# Boxfish Studio

@@ -30,7 +30,7 @@ const ThemeProviderWrapper = props => {
         setIsLoading(false)
     }, [dark])
 
-    setTimeout(() => document.querySelector("body").classList.add('body-transition'), 0)
+    setTimeout(() => document.querySelector("body").classList.add('body-transition'), 50)
 
     return <ThemeContext.Provider value={{ dark, toggle, isLoading, setIsLoading }} >{props.children}</ThemeContext.Provider>
 }

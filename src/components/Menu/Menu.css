@@ -32,7 +32,11 @@ button.navbar-toggler {
 
 }
 
-@media screen and (min-width:800px) {
+.menu-links-container .toggle-theme-link{
+    color: rgb(255,92,92)!important;
+}
+
+@media screen and (min-width:992px) {
     .menu-button, .menu-links{
         display: none;
     }
