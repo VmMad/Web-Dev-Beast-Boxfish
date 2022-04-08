@@ -31,9 +31,8 @@ img{
 h2{
   transition: all ease-in .5s ;
 }
-
 h1{
-  transition: width ease-in .5s, padding-left ease-in .5s;
+  transition: all ease-in .5s, font-size 0s ;
 }
 
 .body-transition{

@@ -1,6 +1,6 @@
 const { userAgent, geolocation } = navigator
 
-const userOS = () => {
+const getUserOS = () => {
     let OperatingSystem
     if (userAgent.indexOf("Win") !== -1) OperatingSystem = "Windows"
     if (userAgent.indexOf("Mac") !== -1) OperatingSystem = "MacOS"
@@ -9,7 +9,7 @@ const userOS = () => {
 
     console.log("Sistema operativo:", OperatingSystem)
 }
-const userGeolocation = () => {
+const getUserGeolocation = () => {
 
 
     const success = pos => {
@@ -24,8 +24,9 @@ const userGeolocation = () => {
     geolocation.getCurrentPosition(success, error)
 }
 const logUserData = () => {
-    userOS()
-    userGeolocation()
+
+    getUserOS()
+    getUserGeolocation()
 }
 
 export { logUserData }

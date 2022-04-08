@@ -1,5 +1,5 @@
 import './App.css'
-import AppRoutes from "./routes/AppRoutes"
+import AppRoutes from './routes/AppRoutes'
 import Header from './components/Header/Header'
 import { useEffect } from 'react'
 import { logUserData } from "./UserData.js"
